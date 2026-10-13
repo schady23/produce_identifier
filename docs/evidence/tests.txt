@@ -1,0 +1,35 @@
+test_empty_and_multiple_items_require_manual_selection (test_contracts.ContractTests.test_empty_and_multiple_items_require_manual_selection) ... ok
+test_failure_injection_bad_normalization (test_contracts.ContractTests.test_failure_injection_bad_normalization) ... ok
+test_failure_injection_wrong_label_map (test_contracts.ContractTests.test_failure_injection_wrong_label_map) ... ok
+test_frame_contract_rejects_missing_grayscale_float (test_contracts.ContractTests.test_frame_contract_rejects_missing_grayscale_float) ... ok
+test_inactive_or_ambiguous_sku_falls_back (test_contracts.ContractTests.test_inactive_or_ambiguous_sku_falls_back) ... ok
+test_invalid_boxes_scores_class_ids_rejected (test_contracts.ContractTests.test_invalid_boxes_scores_class_ids_rejected) ... ok
+test_invalid_catalog_rejected (test_contracts.ContractTests.test_invalid_catalog_rejected) ... ok
+test_invalid_weights_are_rejected (test_contracts.ContractTests.test_invalid_weights_are_rejected) ... ok
+test_low_confidence_falls_back (test_contracts.ContractTests.test_low_confidence_falls_back) ... ok
+test_price_and_confirmation_requirement (test_contracts.ContractTests.test_price_and_confirmation_requirement) ... ok
+test_tensor_contract_rejects_nan_shape_version (test_contracts.ContractTests.test_tensor_contract_rejects_nan_shape_version) ... ok
+test_valid_pipeline_fixture_and_json_logging (test_contracts.ContractTests.test_valid_pipeline_fixture_and_json_logging) ... ok
+test_weight_units_are_equivalent (test_contracts.ContractTests.test_weight_units_are_equivalent) ... ok
+test_actual_bgr_rgb_and_letterbox_geometry (test_live.LiveTests.test_actual_bgr_rgb_and_letterbox_geometry) ... ok
+test_confirmation_recalculates_changed_weight (test_live.LiveTests.test_confirmation_recalculates_changed_weight) ... ok
+test_inactive_sku_is_rechecked_at_confirmation (test_live.LiveTests.test_inactive_sku_is_rechecked_at_confirmation) ... ok
+test_latest_frame_queue_is_bounded_and_copies (test_live.LiveTests.test_latest_frame_queue_is_bounded_and_copies) ... ok
+test_low_confidence_requires_explicit_manual_choice (test_live.LiveTests.test_low_confidence_requires_explicit_manual_choice) ... ok
+test_missing_weight_allows_preview_but_never_confirmation (test_live.LiveTests.test_missing_weight_allows_preview_but_never_confirmation) ... ok
+test_multiple_items_cannot_be_automatically_confirmed (test_live.LiveTests.test_multiple_items_cannot_be_automatically_confirmed) ... ok
+test_reconnect_click_waits_for_previous_camera_in_background (test_live.LiveTests.test_reconnect_click_waits_for_previous_camera_in_background) ... ok
+test_single_image_failure_injection_recovers_without_a_new_frame (test_live.LiveTests.test_single_image_failure_injection_recovers_without_a_new_frame) ... ok
+test_unrelated_sku_cannot_be_automatically_confirmed (test_live.LiveTests.test_unrelated_sku_cannot_be_automatically_confirmed) ... ok
+test_confirm_manual_selection_change_and_stop_are_clickable (test_ui.UiTests.test_confirm_manual_selection_change_and_stop_are_clickable) ... ok
+test_frame_changes_do_not_move_buttons_during_mouse_clicks (test_ui.UiTests.test_frame_changes_do_not_move_buttons_during_mouse_clicks) ... ok
+test_long_error_text_does_not_shift_controls (test_ui.UiTests.test_long_error_text_does_not_shift_controls) ... ok
+test_open_image_button_dispatches_and_uses_a_readable_qt_dialog (test_ui.UiTests.test_open_image_button_dispatches_and_uses_a_readable_qt_dialog) ... ok
+test_settings_button_opens_dialog_on_first_click (test_ui.UiTests.test_settings_button_opens_dialog_on_first_click) ... ok
+test_theme_overrides_dark_system_palette_for_popups_and_dialogs (test_ui.UiTests.test_theme_overrides_dark_system_palette_for_popups_and_dialogs) ... ok
+test_weight_edits_do_not_interrupt_live_recognition (test_ui.UiTests.test_weight_edits_do_not_interrupt_live_recognition) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.933s
+
+OK

@@ -1,0 +1,87 @@
+{
+  "timestamp_unix_s": 1791921912.0356174,
+  "size": 416,
+  "checks": {
+    "contract_and_policy_tests": {
+      "passed": true,
+      "details": {
+        "count": 30
+      }
+    },
+    "actual_model_pipeline": {
+      "passed": true,
+      "details": {
+        "label": "apple",
+        "confidence": 0.8364652395248413,
+        "estimated_total_usd": "1.50"
+      }
+    },
+    "stage_telemetry_and_latency": {
+      "passed": true,
+      "details": {
+        "count": 12,
+        "p50": 21.17199999975128,
+        "p90": 22.105610000107845,
+        "p95": 22.48098999962167,
+        "p99": 22.8348379991985,
+        "scope": "warmed image-ready pipeline; excludes UI/model startup/camera/human wait"
+      }
+    },
+    "two_actual_failure_injections_and_recovery": {
+      "passed": true,
+      "details": [
+        {
+          "injection": "bad-normalization",
+          "boundary": "representation->inference",
+          "outcome": "caught rejection; process continued; no silent acceptance"
+        },
+        {
+          "injection": "wrong-label-map",
+          "boundary": "inference->postprocessing",
+          "outcome": "caught rejection; process continued; no silent acceptance"
+        }
+      ]
+    },
+    "qt_interface_actual_model_flow": {
+      "passed": true,
+      "details": {
+        "recognition": true,
+        "weight_entry": true,
+        "freeze_before_confirm": true,
+        "price": "1.50",
+        "confirmation_logged": true,
+        "invalid_weight_disables_confirmation": true,
+        "scope": "Qt component integration on offscreen display using a public sample; physical desktop visibility is separate"
+      }
+    }
+  },
+  "failure_injections": [
+    {
+      "injection": "bad-normalization",
+      "boundary": "representation->inference",
+      "outcome": "caught rejection; process continued; no silent acceptance"
+    },
+    {
+      "injection": "wrong-label-map",
+      "boundary": "inference->postprocessing",
+      "outcome": "caught rejection; process continued; no silent acceptance"
+    }
+  ],
+  "model": {
+    "weights": "C:\\Users\\schad\\opencode_projects\\grocery_project\\models\\yolo11n.pt",
+    "label_map_sha256": "cd0d7edd644b6321a71ee15dc2250cf60074717d490ed8f6cb9d84332c219214",
+    "representation_version": "rgb-nchw-01-v1",
+    "device": "cpu",
+    "load_ms": 58.94379999881494,
+    "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  },
+  "latency_ms": {
+    "count": 12,
+    "p50": 21.17199999975128,
+    "p90": 22.105610000107845,
+    "p95": 22.48098999962167,
+    "p99": 22.8348379991985,
+    "scope": "warmed image-ready pipeline; excludes UI/model startup/camera/human wait"
+  },
+  "passed": true
+}

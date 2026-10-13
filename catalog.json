@@ -1,0 +1,70 @@
+{
+  "version": "catalog-v1",
+  "currency": "USD",
+  "description": "Fictional demo SKUs and prices. These are not real PLU codes.",
+  "items": [
+    {
+      "sku": "DEMO_APPLE",
+      "label": "apple",
+      "name": "Apple",
+      "price_per_kg": "3.00",
+      "active": true
+    },
+    {
+      "sku": "DEMO_BANANA",
+      "label": "banana",
+      "name": "Banana",
+      "price_per_kg": "1.50",
+      "active": true
+    },
+    {
+      "sku": "DEMO_ORANGE",
+      "label": "orange",
+      "name": "Orange",
+      "price_per_kg": "2.50",
+      "active": true
+    },
+    {
+      "sku": "DEMO_CARROT",
+      "label": "carrot",
+      "name": "Carrot",
+      "price_per_kg": "2.00",
+      "active": true
+    },
+    {
+      "sku": "DEMO_BELL_PEPPER",
+      "label": "bell pepper",
+      "name": "Bell pepper",
+      "price_per_kg": "4.00",
+      "active": true
+    },
+    {
+      "sku": "DEMO_CUCUMBER",
+      "label": "cucumber",
+      "name": "Cucumber",
+      "price_per_kg": "2.50",
+      "active": true
+    },
+    {
+      "sku": "DEMO_POTATO",
+      "label": "potato",
+      "name": "Potato",
+      "price_per_kg": "1.80",
+      "active": true
+    },
+    {
+      "sku": "DEMO_TOMATO",
+      "label": "tomato",
+      "name": "Tomato",
+      "price_per_kg": "3.50",
+      "active": true
+    },
+    {
+      "sku": "DEMO_BROCCOLI",
+      "label": "broccoli",
+      "name": "Broccoli",
+      "price_per_kg": "3.00",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+
+
+Purpose: In Project Assignment 1 you proposed an AI system architecture. In this assignment you will formalize and implement the pipeline surrounding your model.
+
+Your goal is to demonstrate pipeline rigor: explicit contracts at boundaries, minimal working implementation, failure injection, and observability. This is where architecture becomes engineering.
+Due Date
+
+Due: Two weeks from today (submit to Canvas).
+Submission Format
+
+    1 PDF (preferred) or Markdown document, 3–6 pages
+    Plus: your code submission (GitHub link or uploaded code folder)
+
+Reminder: You are not graded on model performance. You are graded on architectural thinking, pipeline correctness, and clarity. Small, clean systems score higher than complex but vague ones.
+Required Components
+1. Updated Architecture Diagram
+
+Update your diagram from Project Assignment 1 to explicitly show the pipeline stages below. Your diagram must also clearly mark boundaries between stages.
+
+Your diagram must include:
+
+Input → Validation → Transformation → Representation → Model Inference → Postprocessing → Constraints / Policy → Output → Logging / Observability
+
+Add at least three boundary annotations describing what could fail at that boundary and why.
+2. Data Contracts at Pipeline Boundaries
+
+Define explicit data contracts for at least three pipeline boundaries. Each contract must include:
+
+    Input shape and type
+    Output shape and type
+    Units (if applicable)
+    Allowed ranges
+    Missing data policy
+    Version identifier
+
+Example (text system):
+
+Boundary: Preprocessing → Tokenization
+Input: UTF-8 string, length ≤ 4,096 chars
+Output: int32 tensor of shape (N,)
+Constraint: no null tokens allowed
+Version: tokenizer_v1
+3. Minimal Pipeline Implementation
+
+Implement a minimal working pipeline skeleton. It must:
+
+    Accept input
+    Validate schema
+    Transform representation
+    Call a model (small is fine)
+    Postprocess output
+    Log intermediate statistics
+
+Your system can be an LLM text pipeline, a vision system, RAG, audio, or another approved pipeline. Keep it minimal and correct.
+4. Failure Injection and Analysis
+
+Intentionally break your system in at least two ways (failure injection).
+
+Examples:
+
+    Unit mismatch
+    Silent truncation of input
+    Incorrect normalization constants
+    Swapped feature order
+    Wrong tokenizer version
+    Batch padding or mask error
+
+For each failure injection, answer:
+
+    What changed
+    Did the system crash
+    Did it silently fail
+    Which boundary allowed the failure
+    What architectural change would prevent it
+
+5. Observability Plan
+
+Define what you would monitor in production. Include at least five items and explain: why it matters, what boundary it protects, and what threshold would concern you.
+
+Examples:
+
+    Input distribution statistics
+    Feature mean and variance
+    Embedding norms
+    Output entropy
+    Decision rate
+    Latency percentiles (p50, p90, p99)
+    Error rate and retry rate
+
+6. Latency and Throughput Considerations
+
+Provide a short conceptual analysis:
+
+    Where is the most expensive stage in your pipeline
+    Is your system latency-sensitive or throughput-sensitive
+    Would batching change behavior
+    Where could backpressure occur
+
+7. Reflection (1 Page Maximum)
+
+Answer all four questions:
+
+    What part of your system is most fragile
+    What assumption worries you the most
+    If your model were replaced tomorrow, what would remain unchanged
+    What would break immediately
+

@@ -1,0 +1,20 @@
+.venv/
+.tools/
+__pycache__/
+*.pyc
+logs/
+*.pt
+*.onnx
+runs/
+data/
+tmp/
+.runtime/
+Ultralytics/
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.aws/

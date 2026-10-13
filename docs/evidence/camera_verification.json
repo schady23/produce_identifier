@@ -1,0 +1,17 @@
+{
+  "timestamp_unix_s": 1791920662.982343,
+  "check": {
+    "passed": true,
+    "details": {
+      "camera_index": 0,
+      "frames": 5,
+      "frame_shape": [
+        480,
+        640,
+        3
+      ],
+      "mean_service_latency_ms": 29.415920000064943,
+      "images_saved": false
+    }
+  }
+}
