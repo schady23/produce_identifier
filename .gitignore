@@ -18,3 +18,7 @@ Ultralytics/
 .codex/
 .agents/
 .aws/
+
+# Local assignment source documents
+/project_part2_req.txt
+/ai_arch_proj_desc.pdf
